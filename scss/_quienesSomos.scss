@@ -1,0 +1,79 @@
+                            /** QUIENES SOMOS **/
+
+
+                            .quienesSomos{
+    
+       
+                                display: grid;
+                                grid-template-columns: repeat(4,1fr);
+                                grid-template-rows: repeat(3,1fr);
+                                grid-template-areas: 
+                                    "titulo titulo titulo titulo"
+                                    "fotito mision mision mision"
+                                    "vision vision vision aside";
+                                justify-items: center;
+                                }
+                            
+                            
+                            
+                            .contenedorHijo{
+                                width: 70%;
+                                height: 19vh;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            
+                            .titulo{
+                                color: black;
+                                grid-area: titulo;
+                                
+                            }
+                            .fotito{
+                                border-radius: 15px;
+                                grid-area: fotito;
+                                
+                            }
+                            
+                            .col-4{
+                                opacity: 0.75;
+                            }
+                            
+                            .col-4:hover{
+                                opacity: 1;
+                            }
+                            
+                            .col-12{
+                                opacity: 0.75;
+                            }
+                            .col-12:hover{
+                                opacity: 1;
+                            }
+                            
+                            .mision{
+                                font-family: 'Barlow', sans-serif;
+                                color: brown;
+                                font-weight: bolder;
+                                grid-area: mision;
+                                font-size: large;
+                                
+                                
+                            }
+                            
+                            .aside{
+                                border-radius: 15px;
+                                grid-area: aside;
+                            }
+                            
+                            .vision{
+                                font-family: 'Barlow', sans-serif;
+                                color: brown;
+                                font-weight: bolder;
+                                grid-area: vision;
+                                font-size: large;
+                                
+                            }
+                            
+                                                            /** FIN QUIENES SOMOS **/

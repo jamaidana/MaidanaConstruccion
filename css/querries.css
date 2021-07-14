@@ -1,0 +1,25 @@
+Guardado de ejemplo
+
+/**@media only screen and (max-width: 768px) {
+    h1{
+        font-family: 'Raleway', sans-serif;
+        color:darkred;
+        text-align: center;
+        border: 0.7px solid;
+    }
+}
+@media only screen and (min-width: 768px) {
+        h1{
+        color: white;
+        font-size: 26px ;
+        font-family: font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    h1{
+        color:black;
+        font-size: 36px ;
+        font-family: font-family: 'Barlow', sans-serif;
+    }
+}**/

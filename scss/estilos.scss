@@ -1,0 +1,139 @@
+
+$title-font: 'Raleway', sans-serif;
+$subtitle-font: 'Barlow', sans-serif;
+$p-font:'Barlow', sans-serif;
+$headerBack-color: #f3f4edde;
+$bodyBack-color:  #ffffff;
+$concretaBack-color: #f3f4eda4;
+
+@import "diseno";
+@import "footer";
+@import "index";
+@import "proyectos";
+@import "quienesSomos";
+@import "titulos";
+@import "header";
+
+
+.btn{
+    margin: 15px;
+}
+
+p{
+    text-align: center;
+    font-family: $p-font;
+}
+
+body{
+    background-color: $bodyBack-color;
+}
+
+/** Anidaciones **/
+.footer, .quienesSomos, .tablaProyectosRealizados, .formularioContacto, .formularioSuscripcion, .formularioSingUp{
+    text-align: center;
+}
+/**  FIN Anidaciones **/
+
+
+/** Animaciones **/
+
+.aparecer{
+    margin:70px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+
+/** FIN Animaciones **/
+
+
+/** Transformaciones **/
+
+.foto{
+    transition: 0.5s;
+}
+
+.foto:hover{
+    transform: scale(3,3); /**scala acorde a lo que mido en este caso agranda alto y ancho**/
+}
+
+
+.design{
+    transition: 0.5s;
+}
+.design:hover{
+    transform: scale(3,3);
+}
+
+
+/** FIN Transformaciones **/
+
+/** Gradiantes **/
+
+.gradContactanos{
+    background: linear-gradient(to top, darkgrey,white);
+}
+
+/** FIN Gradiantes **/
+
+
+
+/** Querries **/
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-family: 'Raleway', sans-serif;
+        color:darkred;
+        text-align: center;
+        border: 0.7px solid;
+    }
+    .header{
+        text-align: center;
+    }
+    .container{
+        text-align: center;
+    }
+    .imagenSanSebastian{
+    height: 100px;
+    }
+}
+@media only screen and (min-width: 768px) {
+       h1{
+        color: black;
+        font-size: 26px ;
+        font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    h1{
+        color:black;
+        font-size: 36px ;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+/** FIN Querries **/
+
+
+
+
+
+/**Colores 
+f3f4ed
+536162
+424642
+c06014
+**/
+

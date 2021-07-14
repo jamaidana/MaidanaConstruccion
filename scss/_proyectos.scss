@@ -1,0 +1,77 @@
+/** PROYECTOS **/
+
+$bgRem:#cecaca;
+$bgCon:#a8a2a2b9;
+$bgIng:#a8a2a271;
+$h3Col:#a3a2a2ee;
+$pColor:#ffffffcb;
+
+
+.proyectos--fondo{
+    background:lightgrey;
+}
+
+.proyectos__tablaProyectos{
+    border: 2px black solid;    
+    display: flex; /** CON ESTO SE ACOMODARON **/
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;    
+}
+
+.proyectos__tablaProyectos__titulo--uppercase{ 
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.proyectos__tablaProyectos__nomObra{
+    text-align: center;
+    font-size: bold;
+}
+
+.proyectos__tablaProyectos__tipoObra--inherit{
+    text-transform:capitalize;
+}
+
+h5{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold; 
+    margin:20px;
+}
+
+
+
+@mixin proyectos($bg) {
+    background-color:$bg;
+    border-radius: 5px;
+    padding: 5rem;
+    text-align: center;
+    h3{
+        color:$h3Col;
+    }
+    p{
+        color:$pColor;
+    }  
+}
+
+.remodelaciones{
+    @include proyectos($bgRem,)
+}
+
+.construcciones{
+    @include proyectos($bgIng,)
+}
+
+.ingenieria{
+    @include proyectos($bgCon,)
+}
+    
+
+
+
+
+
+
+/** FIN PROYECTOS **/

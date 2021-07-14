@@ -1,0 +1,24 @@
+@mixin proyectos($bg) {
+    background-color:$bg;
+    border-radius: 5px;
+    padding: 5rem;
+    text-align: center;
+    h3{
+        color:$h3Col;
+    }
+    p{
+        color:$pColor;
+    }  
+}
+
+.remodelaciones{
+    @include proyectos($bgRem,)
+}
+
+.construcciones{
+    @include proyectos($bgIng,)
+}
+
+.ingenieria{
+    @include proyectos($bgCon,)
+}

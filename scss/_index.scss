@@ -1,0 +1,50 @@
+                   
+
+.concreta{
+    background-color: $concretaBack-color;
+    text-align: center;
+}  
+                   
+                   
+                   /** ARTICLES INDEX **/
+
+                    .disenoHome{
+                        width: 100%;
+                        display: flex; /** CON ESTO SE ACOMODARON **/
+                        position: relative;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        align-items: stretch;
+                           
+                    }
+                    
+                    .foto{
+                        width: 180px;
+                        height: 100px;
+                        margin: 5px;
+                        border: darkgrey;
+                        opacity: .85;
+                        border: 2px double grey
+                    }
+                    
+                    img:hover{
+                        opacity: 1;
+                        border: solid 2px white;
+                    }
+                    
+                    article{
+                        display: inline-block;
+                        position: relative;
+                    }
+                    
+                    a {
+                        color: black;
+                        text-decoration: none; /**Esto para sacarle el subrayado**/
+                    }
+                    a:visited {
+                        color: black;
+                       }
+                    
+                    
+                                       /** FIN ARTICLES INDEX **/

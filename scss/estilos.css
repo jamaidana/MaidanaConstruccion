@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/** DISEÑOS  PROYECTOS REALIZADOS **/
+.tablaProyectosRealizados {
+  border: 2px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /** CON ESTO SE ACOMODARON **/
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.dropdown {
+  text-align: center;
+  padding: 40px;
+  margin: auto;
+}
+
+.fila {
+  font-size: 20px;
+  border: 3px solid double;
+  background: -webkit-gradient(linear, left bottom, left top, from(gray), color-stop(grey), to(white));
+  background: linear-gradient(to top, gray, grey, white);
+}
+
+.colDiseno {
+  text-align: center;
+}
+
+.rowDiseno {
+  background-color: whitesmoke;
+  opacity: .65;
+  text-align: center;
+}
+
+.rowDiseno:hover {
+  opacity: 1;
+}
+
+.design:hover {
+  opacity: 1;
+}
+
+/** FIN DISEÑOS  PROYECTOS REALIZADOS **/
+/**FOOTER**/
+.endPage {
+  padding: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/**FIN FOOTER**/
+.concreta {
+  background-color: #f3f4eda4;
+  text-align: center;
+}
+
+/** ARTICLES INDEX **/
+.disenoHome {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /** CON ESTO SE ACOMODARON **/
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.foto {
+  width: 180px;
+  height: 100px;
+  margin: 5px;
+  border: darkgrey;
+  opacity: .85;
+  border: 2px double grey;
+}
+
+img:hover {
+  opacity: 1;
+  border: solid 2px white;
+}
+
+article {
+  display: inline-block;
+  position: relative;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  /**Esto para sacarle el subrayado**/
+}
+
+a:visited {
+  color: black;
+}
+
+/** FIN ARTICLES INDEX **/
+/** PROYECTOS **/
+.proyectos--fondo {
+  background: lightgrey;
+}
+
+.proyectos__tablaProyectos {
+  border: 2px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /** CON ESTO SE ACOMODARON **/
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.proyectos__tablaProyectos__titulo--uppercase {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.proyectos__tablaProyectos__nomObra {
+  text-align: center;
+  font-size: bold;
+}
+
+.proyectos__tablaProyectos__tipoObra--inherit {
+  text-transform: capitalize;
+}
+
+h5 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.remodelaciones {
+  background-color: #cecaca;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.remodelaciones h3 {
+  color: #a3a2a2ee;
+}
+
+.remodelaciones p {
+  color: #ffffffcb;
+}
+
+.construcciones {
+  background-color: #a8a2a271;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.construcciones h3 {
+  color: #a3a2a2ee;
+}
+
+.construcciones p {
+  color: #ffffffcb;
+}
+
+.ingenieria {
+  background-color: #a8a2a2b9;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.ingenieria h3 {
+  color: #a3a2a2ee;
+}
+
+.ingenieria p {
+  color: #ffffffcb;
+}
+
+/** FIN PROYECTOS **/
+/** QUIENES SOMOS **/
+.quienesSomos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "titulo titulo titulo titulo" "fotito mision mision mision" "vision vision vision aside";
+  justify-items: center;
+}
+
+.contenedorHijo {
+  width: 70%;
+  height: 19vh;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo {
+  color: black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+}
+
+.fotito {
+  border-radius: 15px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fotito;
+}
+
+.col-4 {
+  opacity: 0.75;
+}
+
+.col-4:hover {
+  opacity: 1;
+}
+
+.col-12 {
+  opacity: 0.75;
+}
+
+.col-12:hover {
+  opacity: 1;
+}
+
+.mision {
+  font-family: 'Barlow', sans-serif;
+  color: brown;
+  font-weight: bolder;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: mision;
+  font-size: large;
+}
+
+.aside {
+  border-radius: 15px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: aside;
+}
+
+.vision {
+  font-family: 'Barlow', sans-serif;
+  color: brown;
+  font-weight: bolder;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: vision;
+  font-size: large;
+}
+
+/** FIN QUIENES SOMOS **/
+/** TITULOS **/
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: black;
+  border: 1px solid;
+}
+
+h2, h3, h4 {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+/** FIN TITULOS **/
+.header {
+  background-color: #f3f4edde;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  margin: 15px;
+}
+
+p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/** Anidaciones **/
+.footer, .quienesSomos, .tablaProyectosRealizados, .formularioContacto, .formularioSuscripcion, .formularioSingUp {
+  text-align: center;
+}
+
+/**  FIN Anidaciones **/
+/** Animaciones **/
+.aparecer {
+  margin: 70px;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/** FIN Animaciones **/
+/** Transformaciones **/
+.foto {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.foto:hover {
+  -webkit-transform: scale(3, 3);
+          transform: scale(3, 3);
+  /**scala acorde a lo que mido en este caso agranda alto y ancho**/
+}
+
+.design {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.design:hover {
+  -webkit-transform: scale(3, 3);
+          transform: scale(3, 3);
+}
+
+/** FIN Transformaciones **/
+/** Gradiantes **/
+.gradContactanos {
+  background: -webkit-gradient(linear, left bottom, left top, from(darkgrey), to(white));
+  background: linear-gradient(to top, darkgrey, white);
+}
+
+/** FIN Gradiantes **/
+/** Querries **/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    color: darkred;
+    text-align: center;
+    border: 0.7px solid;
+  }
+  .header {
+    text-align: center;
+  }
+  .container {
+    text-align: center;
+  }
+  .imagenSanSebastian {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    color: black;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    color: black;
+    font-size: 36px;
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+/** FIN Querries **/
+/**Colores 
+f3f4ed
+536162
+424642
+c06014
+**/
+/*# sourceMappingURL=estilos.css.map */

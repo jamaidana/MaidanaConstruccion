@@ -1,0 +1,396 @@
+
+
+
+.header {
+    background-color: #f3f4edde;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.btn{
+    margin: 15px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+.concreta{
+    background-color: #f3f4eda4;
+    text-align: center;
+}
+
+
+                    /** ARTICLES INDEX **/
+.disenoHome{
+    width: 100%;
+    display: flex; /** CON ESTO SE ACOMODARON **/
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+       
+}
+
+.foto{
+    width: 180px;
+    height: 100px;
+    margin: 5px;
+    border: darkgrey;
+    opacity: .85;
+    border: 2px double grey
+}
+
+img:hover{
+    opacity: 1;
+    border: solid 2px white;
+}
+
+article{
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    color: black;
+    text-decoration: none; /**Esto para sacarle el subrayado**/
+}
+a:visited {
+    color: black;
+   }
+
+
+                   /** FIN ARTICLES INDEX **/
+
+   /** TITULOS **/
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color:black;
+    border: 1px solid;
+
+}
+
+h2, h3, h4{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+h6{
+    text-align: center;
+}
+
+
+/** DISEÑOS  PROYECTOS REALIZADOS **/
+
+
+
+.tablaProyectosRealizados{
+    border: 2px black solid;    
+    display: flex; /** CON ESTO SE ACOMODARON **/
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;    
+}
+
+.dropdown{
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+}
+
+
+.fila {
+    font-size: 20px;
+    border: 3px solid double;
+    background: linear-gradient(to top, gray, grey, white,);
+}
+.colDiseno{
+    text-align: center;
+}
+
+.rowDiseno{
+    background-color: white;
+    opacity:.65;
+    text-align: center;
+}
+
+.rowDiseno:hover{
+    opacity: 1;
+}
+
+.design:hover{
+    opacity: 1;
+}
+
+/** QUIENES SOMOS **/
+
+
+.quienesSomos{
+    
+       
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "fotito mision mision mision"
+        "vision vision vision aside";
+    justify-items: center;
+    }
+
+
+
+.contenedorHijo{
+    width: 70%;
+    height: 19vh;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo{
+    color: black;
+    grid-area: titulo;
+    
+}
+.fotito{
+    border-radius: 15px;
+    grid-area: fotito;
+    
+}
+
+.col-4{
+    opacity: 0.75;
+}
+
+.col-4:hover{
+    opacity: 1;
+}
+
+.col-12{
+    opacity: 0.75;
+}
+.col-12:hover{
+    opacity: 1;
+}
+
+.mision{
+    font-family: 'Barlow', sans-serif;
+    color: brown;
+    font-weight: bolder;
+    grid-area: mision;
+    font-size: large;
+    
+    
+}
+
+.aside{
+    border-radius: 15px;
+    grid-area: aside;
+}
+
+.vision{
+    font-family: 'Barlow', sans-serif;
+    color: brown;
+    font-weight: bolder;
+    grid-area: vision;
+    font-size: large;
+    
+}
+
+/** FIN QUIENES SOMOS **/
+
+.endPage{
+    padding: 40px;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+.footer, .quienesSomos, .tablaProyectosRealizados, .formularioContacto, .formularioSuscripcion, .formularioSingUp{
+    text-align: center;
+}
+
+/**TODO ANIDADO ARRIBA**/
+/**.tablaProyectosRealizados{
+    text-align: center;
+}
+.formularioContacto{
+    text-align: center;
+}
+
+.formularioSuscripcion{
+    text-align: center;
+}
+.formularioSingUp{
+    text-align: center;
+}**/
+/**.footer{
+    text-align: center;
+    background-color:#7f837fd0 ;
+}**/
+
+/** Animaciones **/
+
+.aparecer{
+    margin:70px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+
+/** FIN Animaciones **/
+
+
+/** Transformaciones **/
+
+.foto{
+    transition: 0.5s;
+}
+
+.foto:hover{
+    transform: scale(3,3); /**scala acorde a lo que mido en este caso agranda alto y ancho**/
+}
+
+
+.design{
+    transition: 0.5s;
+}
+.design:hover{
+    transform: scale(3,3);
+}
+
+
+/** FIN Transformaciones **/
+
+/** Gradiantes **/
+
+.gradContactanos{
+    background: linear-gradient(to top, darkgrey,white);
+}
+
+/** FIN Gradiantes **/
+
+
+
+/** Querries **/
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-family: 'Raleway', sans-serif;
+        color:darkred;
+        text-align: center;
+        
+        border: 0.7px solid;
+    }
+    .header{
+        text-align: center;
+    }
+    .container{
+        text-align: center;
+    }
+    .imagenSanSebastian{
+    height: 100px;
+    }
+}
+@media only screen and (min-width: 768px) {
+       h1{
+        color: black;
+        font-size: 26px ;
+        font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    h1{
+        color:black;
+        font-size: 36px ;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+
+
+
+/** PROYECTOS **/
+
+
+.proyectos--fondo{
+    background:lightgrey;
+}
+
+.proyectos__tablaProyectos{
+    border: 2px black solid;    
+    display: flex; /** CON ESTO SE ACOMODARON **/
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;    
+}
+
+.proyectos__tablaProyectos__titulo--uppercase{ 
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.proyectos__tablaProyectos__nomObra{
+    text-align: center;
+    font-size: bold;
+}
+
+.proyectos__tablaProyectos__tipoObra--inherit{
+    text-transform:capitalize;
+}
+
+h5{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold; 
+    margin:20px;
+}
+
+
+
+
+
+
+/** FIN PROYECTOS **/
+
+
+/**Colores 
+f3f4ed
+536162
+424642
+c06014
+**/
+
