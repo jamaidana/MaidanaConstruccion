@@ -54,6 +54,10 @@
 
 /** FIN DISEÑOS  PROYECTOS REALIZADOS **/
 /**FOOTER**/
+.footer {
+  background-color: #d0d1caa4;
+}
+
 .endPage {
   padding: 40px;
   width: 100%;
