@@ -15,7 +15,9 @@ $footer-color: #d0d1caa4;
 @import "titulos";
 @import "header";
 
-
+*{
+    text-decoration: none;
+}
 
 
 .btn{
@@ -103,6 +105,7 @@ body{
         color:darkred;
         text-align: center;
         border: 0.7px solid;
+
     }
     .header{
         text-align: center;
@@ -110,14 +113,37 @@ body{
     .container{
         text-align: center;
     }
+    
     .imagenSanSebastian{
-    height: 100px;
+        height: 100px;
+        transition: .5s;
     }
+    .imagenSanSebastian:hover{
+        transform: scale(1.7,1.7);
+    }
+
+
+    .foto{
+        transition: 0.5s;
+    }
+    
+    .foto:hover{
+        transform: scale(2,2); /**scala acorde a lo que mido en este caso agranda alto y ancho**/
+    }
+    
+    
+    .design{
+        transition: 0.5s;
+    }
+    .design:hover{
+        transform: scale(2,2);
+    }
+
 }
 @media only screen and (min-width: 768px) {
        h1{
         color: black;
-        font-size: 26px ;
+        font-size: 20px ;
         font-family: 'Barlow', sans-serif;
         font-weight: bold;
     }
@@ -125,7 +151,7 @@ body{
 @media only screen and (min-width: 1024px) {
     h1{
         color:black;
-        font-size: 36px ;
+        font-size: 30px ;
         font-family: 'Barlow', sans-serif;
     }
 }
