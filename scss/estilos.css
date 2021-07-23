@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /** DISEÑOS  PROYECTOS REALIZADOS **/
+.a {
+  text-decoration: none;
+}
+
 .tablaProyectosRealizados {
   border: 2px black solid;
   display: -webkit-box;
@@ -392,7 +396,7 @@ label.logo {
   color: black;
   font-size: 30px;
   line-height: 75px;
-  padding: 0 200px;
+  padding: 0 70px;
   font-weight: bold;
 }
 
