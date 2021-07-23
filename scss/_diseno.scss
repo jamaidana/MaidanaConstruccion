@@ -44,3 +44,37 @@
                 
                 
                                     /** FIN DISEÑOS  PROYECTOS REALIZADOS **/
+
+$bgRem:#cecaca;
+$bgCon:#a8a2a2b9;
+$bgIng:#a8a2a271;
+$h3Col:#3b3b3bee;
+$pColor:#ffffffcb;
+
+@mixin proyectos($bg) {
+    background-color:$bg;
+    border-radius: 5px;
+    padding: 5rem;
+    text-align: center;
+    h3{
+        color:$h3Col;
+    }
+    p{
+        color:$pColor;
+    }  
+}
+
+.remodelaciones{
+    @include proyectos($bgRem,)
+}
+
+.construcciones{
+    @include proyectos($bgIng,)
+}
+
+.ingenieria{
+    @include proyectos($bgCon,)
+}
+    
+
+

@@ -16,6 +16,8 @@ $footer-color: #d0d1caa4;
 @import "header";
 
 
+
+
 .btn{
     margin: 15px;
 }
@@ -93,6 +95,9 @@ body{
 /** Querries **/
 
 @media only screen and (max-width: 768px) {
+
+    
+    
     h1{
         font-family: 'Raleway', sans-serif;
         color:darkred;

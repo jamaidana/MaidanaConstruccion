@@ -43,7 +43,7 @@ h5{
 
 
 
-@mixin proyectos($bg) {
+/**@mixin proyectos($bg) {
     background-color:$bg;
     border-radius: 5px;
     padding: 5rem;

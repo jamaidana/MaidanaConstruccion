@@ -1,4 +1,14 @@
-                            /** QUIENES SOMOS **/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/** QUIENES SOMOS **/
 
 
                             .quienesSomos{
@@ -17,7 +27,7 @@
                             
                             
                             .contenedorHijo{
-                                width: 70%;
+                                width: 100%;
                                 height: 19vh;
                                 border-radius: 3px;
                                 display: flex;

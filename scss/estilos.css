@@ -53,6 +53,51 @@
 }
 
 /** FIN DISEÑOS  PROYECTOS REALIZADOS **/
+.remodelaciones {
+  background-color: #cecaca;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.remodelaciones h3 {
+  color: #3b3b3bee;
+}
+
+.remodelaciones p {
+  color: #ffffffcb;
+}
+
+.construcciones {
+  background-color: #a8a2a271;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.construcciones h3 {
+  color: #3b3b3bee;
+}
+
+.construcciones p {
+  color: #ffffffcb;
+}
+
+.ingenieria {
+  background-color: #a8a2a2b9;
+  border-radius: 5px;
+  padding: 5rem;
+  text-align: center;
+}
+
+.ingenieria h3 {
+  color: #3b3b3bee;
+}
+
+.ingenieria p {
+  color: #ffffffcb;
+}
+
 /**FOOTER**/
 .footer {
   background-color: #d0d1caa4;
@@ -101,12 +146,13 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  text-align: center;
 }
 
 .foto {
   width: 180px;
   height: 100px;
-  margin: 5px;
+  margin: 2px;
   border: darkgrey;
   opacity: .85;
   border: 2px double grey;
@@ -179,52 +225,47 @@ h5 {
   margin: 20px;
 }
 
-.remodelaciones {
-  background-color: #cecaca;
-  border-radius: 5px;
-  padding: 5rem;
-  text-align: center;
+/**@mixin proyectos($bg) {
+    background-color:$bg;
+    border-radius: 5px;
+    padding: 5rem;
+    text-align: center;
+    h3{
+        color:$h3Col;
+    }
+    p{
+        color:$pColor;
+    }  
 }
 
-.remodelaciones h3 {
-  color: #a3a2a2ee;
+.remodelaciones{
+    @include proyectos($bgRem,)
 }
 
-.remodelaciones p {
-  color: #ffffffcb;
+.construcciones{
+    @include proyectos($bgIng,)
 }
 
-.construcciones {
-  background-color: #a8a2a271;
-  border-radius: 5px;
-  padding: 5rem;
-  text-align: center;
+.ingenieria{
+    @include proyectos($bgCon,)
 }
+    
 
-.construcciones h3 {
-  color: #a3a2a2ee;
-}
 
-.construcciones p {
-  color: #ffffffcb;
-}
 
-.ingenieria {
-  background-color: #a8a2a2b9;
-  border-radius: 5px;
-  padding: 5rem;
-  text-align: center;
-}
 
-.ingenieria h3 {
-  color: #a3a2a2ee;
-}
 
-.ingenieria p {
-  color: #ffffffcb;
-}
 
 /** FIN PROYECTOS **/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /** QUIENES SOMOS **/
 .quienesSomos {
   display: -ms-grid;
@@ -238,7 +279,7 @@ h5 {
 }
 
 .contenedorHijo {
-  width: 70%;
+  width: 100%;
   height: 19vh;
   border-radius: 3px;
   display: -webkit-box;
@@ -332,13 +373,119 @@ h6 {
 }
 
 /** FIN TITULOS **/
-.header {
-  background-color: #f3f4edde;
-  text-align: center;
-  line-height: 25px;
-  letter-spacing: 2px;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+nav {
+  background: #f3f4edde;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: black;
+  font-size: 30px;
+  line-height: 75px;
+  padding: 0 200px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.lala, a:hover {
+  background: #777474;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.lala {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/**
+.header {
+    background-color: $headerBack-color;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+}**/
 .btn {
   margin: 15px;
 }
