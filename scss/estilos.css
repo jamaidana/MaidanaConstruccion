@@ -354,7 +354,7 @@ h1 {
   text-align: center;
   color: black;
   border: 1px solid;
-  background-color: #c06014;
+  background-color: #57837B;
 }
 
 h2, h3, h4 {
@@ -577,6 +577,7 @@ body {
     color: darkred;
     text-align: center;
     border: 0.7px solid;
+    background: #C9D8B6;
   }
   .header {
     text-align: center;

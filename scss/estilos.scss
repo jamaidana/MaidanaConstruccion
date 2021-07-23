@@ -6,6 +6,8 @@ $headerBack-color: #f3f4edde;
 $bodyBack-color:  #ffffff;
 $concretaBack-color: #f3f4eda4;
 $footer-color: #d0d1caa4;
+$bgh1-colorPhone:#C9D8B6;
+$bgh1-color:#57837B;
 
 @import "diseno";
 @import "footer";
@@ -105,6 +107,7 @@ body{
         color:darkred;
         text-align: center;
         border: 0.7px solid;
+        background:$bgh1-colorPhone;
 
     }
     .header{
