@@ -37,7 +37,7 @@ $bgRem:#cecaca;
 $bgCon:#a8a2a2b9;
 $bgIng:#a8a2a271;
 $h3Col:#3b3b3bee;
-$pColor:#ffffffcb;
+$pColor:#2c2b2bcb;
 
 @mixin proyectos($bg) {
     background-color:$bg;
@@ -64,5 +64,4 @@ $pColor:#ffffffcb;
     @include proyectos($bgCon,)
 }
     
-
 
