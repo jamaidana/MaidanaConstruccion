@@ -12,7 +12,6 @@ $bgh1-color:#57837B;
 @import "diseno";
 @import "footer";
 @import "index";
-@import "proyectos";
 @import "quienesSomos";
 @import "titulos";
 @import "header";
@@ -68,7 +67,7 @@ body{
 /** Transformaciones **/
 
 .foto{
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 .foto:hover{
@@ -77,7 +76,7 @@ body{
 
 
 .design{
-    transition: 0.5s;
+    transition: 0.9s;
 }
 .design:hover{
     transform: scale(3,3);
@@ -107,8 +106,10 @@ body{
         text-align: center;
         border: 0.7px solid;
         background:$bgh1-colorPhone;
-
     }
+
+    
+
     .header{
         text-align: center;
     }
@@ -126,7 +127,7 @@ body{
 
 
     .foto{
-        transition: 0.5s;
+        transition: 0.9s;
     }
     
     .foto:hover{
@@ -135,7 +136,7 @@ body{
     
     
     .design{
-        transition: 0.5s;
+        transition: 0.9s;
     }
     .design:hover{
         transform: scale(2,2);

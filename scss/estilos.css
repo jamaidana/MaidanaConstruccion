@@ -181,84 +181,6 @@ a:visited {
 }
 
 /** FIN ARTICLES INDEX **/
-/** PROYECTOS **/
-.proyectos--fondo {
-  background: lightgrey;
-}
-
-.proyectos__tablaProyectos {
-  border: 2px black solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /** CON ESTO SE ACOMODARON **/
-  position: relative;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.proyectos__tablaProyectos__titulo--uppercase {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.proyectos__tablaProyectos__nomObra {
-  text-align: center;
-  font-size: bold;
-}
-
-.proyectos__tablaProyectos__tipoObra--inherit {
-  text-transform: capitalize;
-}
-
-h5 {
-  font-family: 'Barlow', sans-serif;
-  font-weight: bold;
-  margin: 20px;
-}
-
-/**@mixin proyectos($bg) {
-    background-color:$bg;
-    border-radius: 5px;
-    padding: 5rem;
-    text-align: center;
-    h3{
-        color:$h3Col;
-    }
-    p{
-        color:$pColor;
-    }  
-}
-
-.remodelaciones{
-    @include proyectos($bgRem,)
-}
-
-.construcciones{
-    @include proyectos($bgIng,)
-}
-
-.ingenieria{
-    @include proyectos($bgCon,)
-}
-    
-
-
-
-
-
-
-/** FIN PROYECTOS **/
 /**
 *{
     padding: 0;
@@ -320,7 +242,6 @@ h5 {
 
 .mision {
   font-family: 'Barlow', sans-serif;
-  color: brown;
   font-weight: bolder;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -338,7 +259,6 @@ h5 {
 
 .vision {
   font-family: 'Barlow', sans-serif;
-  color: brown;
   font-weight: bolder;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -418,7 +338,7 @@ a.lala, a:hover {
 
 .checkbtn {
   font-size: 30px;
-  color: white;
+  color: black;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -574,7 +494,6 @@ body {
 @media only screen and (max-width: 768px) {
   h1 {
     font-family: 'Raleway', sans-serif;
-    color: darkred;
     text-align: center;
     border: 0.7px solid;
     background: #C9D8B6;

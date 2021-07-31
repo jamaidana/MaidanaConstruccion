@@ -14,7 +14,7 @@
                             .quienesSomos{
     
        
-                                display: grid;
+                                /**display: grid;
                                 grid-template-columns: repeat(4,1fr);
                                 grid-template-rows: repeat(3,1fr);
                                 grid-template-areas: 
@@ -22,7 +22,7 @@
                                     "fotito mision mision mision"
                                     "vision vision vision aside";
                                 justify-items: center;
-                                }
+                                }**/
                             
                             
                             
@@ -64,7 +64,6 @@
                             
                             .mision{
                                 font-family: 'Barlow', sans-serif;
-                                color: brown;
                                 font-weight: bolder;
                                 grid-area: mision;
                                 font-size: large;
@@ -79,7 +78,6 @@
                             
                             .vision{
                                 font-family: 'Barlow', sans-serif;
-                                color: brown;
                                 font-weight: bolder;
                                 grid-area: vision;
                                 font-size: large;
