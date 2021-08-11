@@ -1,56 +1,49 @@
+.quienesSomos{
 
+.titulo{
+    color: black;
+    grid-area: titulo;
+}
 
+.fotito{
+    border-radius: 15px;
+    grid-area: fotito;
+                                
+}
+                            
+.col-4{
+    opacity: 0.75;
+}
+                            
+.col-4:hover{
+    opacity: 1;
+}
+                            
+.col-12{
+    opacity: 0.75;
+}
 
-                            .quienesSomos{
-
+.col-12:hover{
+    opacity: 1;
+}
                             
-                            
-                            .titulo{
-                                color: black;
-                                grid-area: titulo;
+.mision{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    grid-area: mision;
+    font-size: large;
                                 
-                            }
-                            .fotito{
-                                border-radius: 15px;
-                                grid-area: fotito;
-                                
-                            }
+}
                             
-                            .col-4{
-                                opacity: 0.75;
-                            }
+.aside{
+    border-radius: 15px;
+    grid-area: aside;
+}
                             
-                            .col-4:hover{
-                                opacity: 1;
-                            }
-                            
-                            .col-12{
-                                opacity: 0.75;
-                            }
-                            .col-12:hover{
-                                opacity: 1;
-                            }
-                            
-                            .mision{
-                                font-family: 'Barlow', sans-serif;
-                                font-weight: bolder;
-                                grid-area: mision;
-                                font-size: large;
-                                
-                                
-                            }
-                            
-                            .aside{
-                                border-radius: 15px;
-                                grid-area: aside;
-                            }
-                            
-                            .vision{
-                                font-family: 'Barlow', sans-serif;
-                                font-weight: bolder;
-                                grid-area: vision;
-                                font-size: large;
-                                
-                            }
-                            
-                                                            
+.vision{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    grid-area: vision;
+    font-size: large;
+}
+}
