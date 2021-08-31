@@ -406,8 +406,8 @@ body {
           animation-duration: 8s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 @-webkit-keyframes aparecer {
