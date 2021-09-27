@@ -1,14 +1,19 @@
+const precioMetro = 2100
+
 class presupuestaTuObra{
-    constructor(pNombre,pTrabajo,pCapital,pUbicacion) {
+    constructor(pNombre,pMetrosCuadrados,pCapital) {
         this.pNombre = pNombre;
-        this.pTrabajo = pTrabajo;
+        this.pMetrosCuadrados = parseFloat(pMetrosCuadrados);
         this.pCapital = parseFloat(pCapital);
-        this.pUbicacion = pUbicacion;
+        this.pPrecioMetro = 2400
+        this.pPresupuestoObra = this.pPrecioMetro * this.pMetrosCuadrados
+        this.pValorObra = this.pPresupuestoObra + this.pCapital
     }
-    bienvenida(){
-        console.log("Bienvenido " + this.pNombre + " tu trabajo es de " + this.pTrabajo +" y vivis en " + this.pUbicacion + ". Tu capital de ingreso es " + this.pCapital + ". Confirmas esta información?");
+
+bienvenida(){
+        alert("Bienvenido " + this.pNombre + ". Para su terreno de " + this.pMetrosCuadrados + " metros cuadrados, y con un valor en dolares de " + this.pCapital + ". El presupuesto estimado de la obra sería de " + this.pPresupuestoObra + " dolares. El nuevo valor de tu propiedad terminaría siendo de " + this.pValorObra + " dolares. Ponete en contacto con nosotros para obtener un mayor detalle");
     }
 }
 
-const inversor1 = new perfilInversor ("Diego", "Monostributista", 50000, "CABA");
+const inversor1 = new presupuestaTuObra (prompt('Ingrese su Nombre'), prompt('¿De cuantos metros cuadrados quiere su propiedad?'), prompt("Ingrese el valor de su terreno en dolares"));
 inversor1.bienvenida();

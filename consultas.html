@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="/presupuesta.js"></script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,37 +12,36 @@
     <link rel="stylesheet" href="scss/estilos.css">
     <link rel="icon" href="Iconos/favicon-32x32.png">
     
-    <title>Suscripción</title>
+    <title>Consulta</title>
 </head>
-
 <body>
+    
     <header class="header">
 
 
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </label>
             <label class="logo">MAIDANA</label>
             <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="disenos.html">Diseño</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="quienessomos.html">Nosotros</a></li>
-              <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="disenos.html">Diseño</a></li>
+                <li><a href="consultas.html">Contacto</a></li>
+                <li><a href="quienessomos.html">Nosotros</a></li>
+
             </ul>
-          </nav>
-
-
-
+        </nav>
 
     </header>
-    <main class="container">
-        <h1 class="aparecer">CONTACTANOS Y PRESUPUESTA</h1>
-        <section class="formularioSuscripcion">
 
-            <form>
+    <main class="container">
+        <h1 class="aparecer"> CONTACTANOS</h1>
+
+        <section class="formularioContacto">
+            <form action="https://formspree.io/f/mrgroorl"
+            method="POST">
                 <div class="row">
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Nombre">
@@ -59,57 +57,47 @@
                     <label for="exampleFormControlInput1">
                         <h6>Ingrese Mail</h6>
                     </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
                         placeholder="nombre@ejemplo.com">
                 </div>
-                <div>
-                    <label for="inputPassword5">
-                        <h6>Contraseña</h6>
-                    </label>
-                    <input type="password" id="inputPassword5" class="form-control"
-                        aria-describedby="passwordHelpBlock">
-                    <small id="passwordHelpBlock" class="form-text">
 
-                        Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener
-                        espacios, caracteres especiales ni emoji.
-                    </small>
-                </div>
+
                 <br>
-                <div>
-                    <label for="inputPassword5">
-                        <h6>Repita Contraseña</h6>
-                    </label>
-                    <input type="password" id="inputPassword5" class="form-control"
-                        aria-describedby="passwordHelpBlock">
-                </div>
+
 
                 <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Acepta Términos y Condiciones
-                        </label>
-                        <div class="invalid-feedback">
-                            Usted debe aceptar los términos y condiciones.
-                        </div>
-                    </div>
+                    <label for="exampleFormControlSelect1">
+                        <h6>Motivo de Consulta</h6>
+                    </label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Construcción</option>
+                        <option>Remodelación</option>
+                        <option>Refacciones</option>
+                        <option>Presupuestos</option>
+                        <option>Ingenieria</option>
+                    </select>
                 </div>
 
-                <br>
 
-                <input type="submit" class="btn btn-success" value="Crear">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">
+                        <h6>Ingrese su Consulta</h6>
+                    </label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <input type="submit" class="btn btn-success" value="Enviar">
                 <input type="reset" class="btn btn-secondary" value="Limpiar Campos">
 
-            </form>
-        </section>
-    </main>
-    
-    
 
+        </section>
+
+    </main>
     <hr>
+
     <footer class="footer">
 
-    
+
         <section class="endPage">
 
 
@@ -126,19 +114,24 @@
 
             <section>
                 <div class="tituServicios"><a href="contacto.html">Contacto
-                </a></div>
+                    </a></div>
                 <br>
-                <div class="textoContactoFoot"><p>Campana - Lavalle 150</p></div>
-                <div class="textoContactoFoot"><p class="textoContactoFoot">TEL: XX - XXXX - XXXX</p></div>
+                <div class="textoContactoFoot">
+                    <p>Campana - Bs. As.</p>
+                </div>
+                <div class="textoContactoFoot">
+                    <p>TEL: 11-6856-8289</p>
+                </div>
             </section>
-        </div>
+            </div>
         </section>
-        <div class="terms"><p>© 2010 — 2020 Privacy — Terms</p></div>  
+        <div class="terms">
+            <p>© 2010 — 2020 Privacy — Terms</p>
+        </div>
     </footer>
-
+    <script src="/presupuesta.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
